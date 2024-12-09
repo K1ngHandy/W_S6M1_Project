@@ -23,7 +23,8 @@ export default function Squares() {
   // 'activeSquare'. One holds the _array_ of square ids, and the other keeps track
   // of the currently active square. On page load there's no active square,
   // so the value of 'activeSquare' should be null.
-  const [squares, setSquares] = useState(listOfSquareIds);
+  const [squares, setSquares] = useState(listOfSquareIds); 
+  // set squares is never read because it is for future changes to square IDs
   const [activeSquare, setActiveSquare] = useState(null);
 
   const getClassName = id => {
